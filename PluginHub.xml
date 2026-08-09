@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<PluginData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GitHubPlugin">
+  <Id>ghostorcale444/GridListPlugin</Id>
+  <FriendlyName>Grid List Viewer</FriendlyName>
+  <Author>ghostorcale444</Author>
+  <Tooltip>Shift+Insert to open a list of all spawned grids. Click to spectate.</Tooltip>
+  <Description>Displays a toggleable overlay (Shift+Insert) listing all grids currently spawned in the world. Click any row to teleport the spectator camera to that grid.</Description>
+  <Commit>local-build</Commit>
+</PluginData>
