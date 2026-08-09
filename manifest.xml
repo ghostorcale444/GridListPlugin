@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<CacheManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Commit>local-build</Commit>
+  <Runtime>.NET Framework 4.8.9337.0</Runtime>
+  <GameVersion>1.210.13</GameVersion>
+  <AssetFiles />
+</CacheManifest>

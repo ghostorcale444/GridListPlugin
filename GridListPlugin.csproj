@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target .NET Framework 4.8 for Legacy (SE1 on .NET FX) -->
+    <!-- Switch to net10.0 for the Interim build target            -->
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>GridListPlugin</AssemblyName>
+    <RootNamespace>GridListPlugin</RootNamespace>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <Platforms>x64</Platforms>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <!--
+    SE1 reference assemblies — point these at your local Space Engineers install.
+    Default Steam path shown; adjust if yours differs.
+  -->
+  <PropertyGroup>
+    <SEPath>E:\other new steam lib\steamapps\common\SpaceEngineers\Bin64</SEPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Sandbox.Common">
+      <HintPath>$(SEPath)\Sandbox.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>$(SEPath)\Sandbox.Game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage">
+      <HintPath>$(SEPath)\VRage.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>$(SEPath)\VRage.Game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Input">
+      <HintPath>$(SEPath)\VRage.Input.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>$(SEPath)\VRage.Math.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Render">
+      <HintPath>$(SEPath)\VRage.Render.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>$(SEPath)\VRage.Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
